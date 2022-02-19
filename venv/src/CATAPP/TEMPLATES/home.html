@@ -1,0 +1,14 @@
+{% extends 'index.html'%}
+
+{% block content %}
+<div class="row m-2">
+    {% for cat in response %}
+    <div class="col img-body">
+        <div class="card" style="width: 18rem;">
+                <img alt="Cat" class="card-img-top img-responsive" src="https://cataas.com/cat/{{cat.id}}">
+        </div>
+    </div>
+    {%endfor%}
+</div>
+
+{% endblock %}

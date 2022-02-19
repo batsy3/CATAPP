@@ -1,0 +1,18 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<div class="row m-2">
+    {% for cat in results_tag %}
+    <div class="col img-body">
+        <div class="card" style="width: 18rem;">
+                <img alt="Cat" class="card-img-top img-responsive" src="https://cataas.com/cat/{{cat.id}}">
+        </div>
+    </div>
+    {% empty %}
+    <div class="card-body text-center">
+        <h2>{{message}}</h2>
+    </div>
+    {% endfor %}
+    
+</div>
+{% endblock %}
