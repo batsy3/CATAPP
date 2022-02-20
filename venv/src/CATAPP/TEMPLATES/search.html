@@ -6,6 +6,11 @@
     <div class="col img-body">
         <div class="card" style="width: 18rem;">
                 <img alt="Cat" class="card-img-top img-responsive" src="https://cataas.com/cat/{{cat.id}}">
+                {% for tag in cat.tags %}
+                <div>
+                    <h5 style="color: cadetblue; position: block;"> {{tag}} </h5>
+                </div>
+                {%endfor%}
         </div>
     </div>
     {% empty %}
