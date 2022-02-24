@@ -27,7 +27,6 @@ jobs:
       - name: Test with Unittest
         env:
           SECRET_KEY: ${{secrets.SECRET_KEY}}
-
           DEBUG: ${{secrets.DEBUG}}
           DB_NAME: ${{secrets.DB_NAME}}
           DB_HOST: ${{secrets.DB_HOST}}
@@ -35,4 +34,4 @@ jobs:
           DB_PORT: ${{secrets.DB_PORT}}
 
         run: 
-          python manage.py test
+          coverage run manage.py test
