@@ -34,5 +34,5 @@ jobs:
           DB_ENGINE: ${{secrets.DB_ENGINE}}
           DB_PORT: ${{secrets.DB_PORT}}
 
-        run: |
+        run: 
           python manage.py test
