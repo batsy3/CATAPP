@@ -14,7 +14,7 @@ To use this app, once requirements are installed and configured, user is to star
 start a local server in your CMD next via the following code
 
 ```bash
-mython manage.py runserver
+python manage.py runserver
 ```
 
 # EXPLANATION OF THE CODE 

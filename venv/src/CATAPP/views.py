@@ -17,3 +17,6 @@ def search(request):
             return render(request, 'search.html', {'results_tag': url})
         else:
             return render(request, 'search.html', {'message': error_msg})
+def view(request, cat_id):
+	response=requests.get(f'https://cataas.com/api/{cat_id}')
+	return render (request, 'view.html', {'response':response})
